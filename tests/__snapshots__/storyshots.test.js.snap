@@ -2,8 +2,12 @@
 
 exports[`Storyshots Button onClick handler 1`] = `
 Array [
-  .c0 .component-child {
-  font-family: "Untitled Sans",sans-serif;
+  .c0 button:disabled,
+.c0 button:disabled .component-child {
+  cursor: not-allowed !important;
+}
+
+.c0 button {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -18,31 +22,22 @@ Array [
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
   font-weight: 400;
   line-height: 1.9rem;
-}
-
-.c0 button:disabled,
-.c0 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c0 button {
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  height: 50px;
+  min-width: 200px;
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   padding: 0;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .c0 .primary {
   color: #FFFFFF;
-  background-color: #AB61E5;
+  background-color: #0071f3;
   border: 0;
 }
 
@@ -51,21 +46,25 @@ Array [
 }
 
 .c0 .primary:hover {
-  background-color: #4F0589;
+  top: -4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  background-color: #0366d6;
 }
 
 .c0 .primary:active {
-  background-color: #4F0589;
+  background-color: #0366d6;
 }
 
 .c0 .primary:disabled {
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   background-color: #D9DCDE;
 }
 
 .c0 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border: 1px solid #0071f3;
+  background-color: #0071f3;
 }
 
 .c0 .secondary i {
@@ -74,9 +73,9 @@ Array [
 
 .c0 .secondary:hover,
 .c0 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
+  color: #0071f3;
+  background-color: #FFFFFF;
+  border: 1px solid #0071f3;
 }
 
 .c0 .secondary:disabled {
@@ -104,11 +103,7 @@ Array [
         style={Object {}}
         type="button"
       >
-        <div
-          className="component-child"
-        >
-          Click me!
-        </div>
+        Click me!
       </button>
     </div>
   </div>,
@@ -140,8 +135,12 @@ Array [
 
 exports[`Storyshots Button primary 1`] = `
 Array [
-  .c0 .component-child {
-  font-family: "Untitled Sans",sans-serif;
+  .c0 button:disabled,
+.c0 button:disabled .component-child {
+  cursor: not-allowed !important;
+}
+
+.c0 button {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -156,31 +155,22 @@ Array [
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
   font-weight: 400;
   line-height: 1.9rem;
-}
-
-.c0 button:disabled,
-.c0 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c0 button {
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  height: 50px;
+  min-width: 200px;
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   padding: 0;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .c0 .primary {
   color: #FFFFFF;
-  background-color: #AB61E5;
+  background-color: #0071f3;
   border: 0;
 }
 
@@ -189,21 +179,25 @@ Array [
 }
 
 .c0 .primary:hover {
-  background-color: #4F0589;
+  top: -4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  background-color: #0366d6;
 }
 
 .c0 .primary:active {
-  background-color: #4F0589;
+  background-color: #0366d6;
 }
 
 .c0 .primary:disabled {
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   background-color: #D9DCDE;
 }
 
 .c0 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border: 1px solid #0071f3;
+  background-color: #0071f3;
 }
 
 .c0 .secondary i {
@@ -212,9 +206,9 @@ Array [
 
 .c0 .secondary:hover,
 .c0 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
+  color: #0071f3;
+  background-color: #FFFFFF;
+  border: 1px solid #0071f3;
 }
 
 .c0 .secondary:disabled {
@@ -242,11 +236,7 @@ Array [
         style={Object {}}
         type="button"
       >
-        <div
-          className="component-child"
-        >
-          Call to Action
-        </div>
+        Call to Action
       </button>
     </div>
   </div>,
@@ -278,8 +268,12 @@ Array [
 
 exports[`Storyshots Button primary disabled 1`] = `
 Array [
-  .c0 .component-child {
-  font-family: "Untitled Sans",sans-serif;
+  .c0 button:disabled,
+.c0 button:disabled .component-child {
+  cursor: not-allowed !important;
+}
+
+.c0 button {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -294,31 +288,22 @@ Array [
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
   font-weight: 400;
   line-height: 1.9rem;
-}
-
-.c0 button:disabled,
-.c0 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c0 button {
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  height: 50px;
+  min-width: 200px;
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   padding: 0;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .c0 .primary {
   color: #FFFFFF;
-  background-color: #AB61E5;
+  background-color: #0071f3;
   border: 0;
 }
 
@@ -327,21 +312,25 @@ Array [
 }
 
 .c0 .primary:hover {
-  background-color: #4F0589;
+  top: -4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  background-color: #0366d6;
 }
 
 .c0 .primary:active {
-  background-color: #4F0589;
+  background-color: #0366d6;
 }
 
 .c0 .primary:disabled {
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   background-color: #D9DCDE;
 }
 
 .c0 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border: 1px solid #0071f3;
+  background-color: #0071f3;
 }
 
 .c0 .secondary i {
@@ -350,9 +339,9 @@ Array [
 
 .c0 .secondary:hover,
 .c0 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
+  color: #0071f3;
+  background-color: #FFFFFF;
+  border: 1px solid #0071f3;
 }
 
 .c0 .secondary:disabled {
@@ -380,11 +369,7 @@ Array [
         style={Object {}}
         type="button"
       >
-        <div
-          className="component-child"
-        >
-          Call to Action
-        </div>
+        Call to Action
       </button>
     </div>
   </div>,
@@ -416,8 +401,12 @@ Array [
 
 exports[`Storyshots Button secondary 1`] = `
 Array [
-  .c0 .component-child {
-  font-family: "Untitled Sans",sans-serif;
+  .c0 button:disabled,
+.c0 button:disabled .component-child {
+  cursor: not-allowed !important;
+}
+
+.c0 button {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -432,31 +421,22 @@ Array [
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
   font-weight: 400;
   line-height: 1.9rem;
-}
-
-.c0 button:disabled,
-.c0 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c0 button {
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  height: 50px;
+  min-width: 200px;
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   padding: 0;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .c0 .primary {
   color: #FFFFFF;
-  background-color: #AB61E5;
+  background-color: #0071f3;
   border: 0;
 }
 
@@ -465,21 +445,25 @@ Array [
 }
 
 .c0 .primary:hover {
-  background-color: #4F0589;
+  top: -4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  background-color: #0366d6;
 }
 
 .c0 .primary:active {
-  background-color: #4F0589;
+  background-color: #0366d6;
 }
 
 .c0 .primary:disabled {
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   background-color: #D9DCDE;
 }
 
 .c0 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border: 1px solid #0071f3;
+  background-color: #0071f3;
 }
 
 .c0 .secondary i {
@@ -488,9 +472,9 @@ Array [
 
 .c0 .secondary:hover,
 .c0 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
+  color: #0071f3;
+  background-color: #FFFFFF;
+  border: 1px solid #0071f3;
 }
 
 .c0 .secondary:disabled {
@@ -518,11 +502,7 @@ Array [
         style={Object {}}
         type="button"
       >
-        <div
-          className="component-child"
-        >
-          Call to Action
-        </div>
+        Call to Action
       </button>
     </div>
   </div>,
@@ -554,8 +534,12 @@ Array [
 
 exports[`Storyshots Button secondary disabled 1`] = `
 Array [
-  .c0 .component-child {
-  font-family: "Untitled Sans",sans-serif;
+  .c0 button:disabled,
+.c0 button:disabled .component-child {
+  cursor: not-allowed !important;
+}
+
+.c0 button {
   font-size: 1.6rem;
   display: -webkit-box;
   display: -webkit-flex;
@@ -570,31 +554,22 @@ Array [
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
   font-weight: 400;
   line-height: 1.9rem;
-}
-
-.c0 button:disabled,
-.c0 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c0 button {
+  -webkit-transition: background-color ease 0.2s;
+  transition: background-color ease 0.2s;
+  height: 50px;
+  min-width: 200px;
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   padding: 0;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .c0 .primary {
   color: #FFFFFF;
-  background-color: #AB61E5;
+  background-color: #0071f3;
   border: 0;
 }
 
@@ -603,21 +578,25 @@ Array [
 }
 
 .c0 .primary:hover {
-  background-color: #4F0589;
+  top: -4px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+  background-color: #0366d6;
 }
 
 .c0 .primary:active {
-  background-color: #4F0589;
+  background-color: #0366d6;
 }
 
 .c0 .primary:disabled {
+  box-shadow: rgba(0,0,0,0.12) 0px 5px 10px 0px;
   background-color: #D9DCDE;
 }
 
 .c0 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  border: 1px solid #0071f3;
+  background-color: #0071f3;
 }
 
 .c0 .secondary i {
@@ -626,9 +605,9 @@ Array [
 
 .c0 .secondary:hover,
 .c0 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
+  color: #0071f3;
+  background-color: #FFFFFF;
+  border: 1px solid #0071f3;
 }
 
 .c0 .secondary:disabled {
@@ -656,11 +635,7 @@ Array [
         style={Object {}}
         type="button"
       >
-        <div
-          className="component-child"
-        >
-          Call to Action
-        </div>
+        Call to Action
       </button>
     </div>
   </div>,
@@ -771,7 +746,7 @@ Array [
       className="c0"
       style={
         Object {
-          "color": "#AB61E5",
+          "color": "#0071f3",
         }
       }
     >
@@ -832,1218 +807,6 @@ Array [
       type="bold"
     >
       Components are here to stay
-    </div>
-  </div>,
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>,
-]
-`;
-
-exports[`Storyshots FeedbackTable basic 1`] = `
-Array [
-  .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0.inherited-height {
-  height: 100%;
-}
-
-.c0 .row {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.c0 .row.reverse {
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c0 .row.column {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 .default-width {
-  width: 100%;
-  -webkit-flex-basis: 960px;
-  -ms-flex-preferred-size: 960px;
-  flex-basis: 960px;
-}
-
-.c0 .full-width {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-}
-
-.c0 .col,
-.c0 .col-lg-0,
-.c0 .col-lg-1,
-.c0 .col-lg-2,
-.c0 .col-lg-3,
-.c0 .col-lg-4,
-.c0 .col-lg-5,
-.c0 .col-lg-6,
-.c0 .col-lg-7,
-.c0 .col-lg-8,
-.c0 .col-lg-9,
-.c0 .col-lg-10,
-.c0 .col-lg-11,
-.c0 .col-lg-12,
-.c0 .col-lg-offset-0,
-.c0 .col-lg-offset-1,
-.c0 .col-lg-offset-2,
-.c0 .col-lg-offset-3,
-.c0 .col-lg-offset-4,
-.c0 .col-lg-offset-5,
-.c0 .col-lg-offset-6,
-.c0 .col-lg-offset-7,
-.c0 .col-lg-offset-8,
-.c0 .col-lg-offset-9,
-.c0 .col-lg-offset-10,
-.c0 .col-lg-offset-11 {
-  display: block;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c0 .col {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-}
-
-.c0 .col-lg-hide {
-  display: none;
-}
-
-.c0 .col-lg-0 {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-}
-
-.c0 .col-lg-1 {
-  -webkit-flex-basis: 8.33333333%;
-  -ms-flex-preferred-size: 8.33333333%;
-  flex-basis: 8.33333333%;
-  max-width: 8.33333333%;
-}
-
-.c0 .col-lg-2 {
-  -webkit-flex-basis: 16.66666667%;
-  -ms-flex-preferred-size: 16.66666667%;
-  flex-basis: 16.66666667%;
-  max-width: 16.66666667%;
-}
-
-.c0 .col-lg-3 {
-  -webkit-flex-basis: 25%;
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  max-width: 25%;
-}
-
-.c0 .col-lg-4 {
-  -webkit-flex-basis: 33.33333333%;
-  -ms-flex-preferred-size: 33.33333333%;
-  flex-basis: 33.33333333%;
-  max-width: 33.33333333%;
-}
-
-.c0 .col-lg-5 {
-  -webkit-flex-basis: 41.66666667%;
-  -ms-flex-preferred-size: 41.66666667%;
-  flex-basis: 41.66666667%;
-  max-width: 41.66666667%;
-}
-
-.c0 .col-lg-6 {
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  max-width: 50%;
-}
-
-.c0 .col-lg-7 {
-  -webkit-flex-basis: 58.33333333%;
-  -ms-flex-preferred-size: 58.33333333%;
-  flex-basis: 58.33333333%;
-  max-width: 58.33333333%;
-}
-
-.c0 .col-lg-8 {
-  -webkit-flex-basis: 66.66666667%;
-  -ms-flex-preferred-size: 66.66666667%;
-  flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
-}
-
-.c0 .col-lg-9 {
-  -webkit-flex-basis: 75%;
-  -ms-flex-preferred-size: 75%;
-  flex-basis: 75%;
-  max-width: 75%;
-}
-
-.c0 .col-lg-10 {
-  -webkit-flex-basis: 83.33333333%;
-  -ms-flex-preferred-size: 83.33333333%;
-  flex-basis: 83.33333333%;
-  max-width: 83.33333333%;
-}
-
-.c0 .col-lg-11 {
-  -webkit-flex-basis: 91.66666667%;
-  -ms-flex-preferred-size: 91.66666667%;
-  flex-basis: 91.66666667%;
-  max-width: 91.66666667%;
-}
-
-.c0 .col-lg-12 {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-.c0 .col-lg-offset-0 {
-  margin-left: 0;
-}
-
-.c0 .col-lg-offset-1 {
-  margin-left: 8.33333333%;
-}
-
-.c0 .col-lg-offset-2 {
-  margin-left: 16.66666667%;
-}
-
-.c0 .col-lg-offset-3 {
-  margin-left: 25%;
-}
-
-.c0 .col-lg-offset-4 {
-  margin-left: 33.33333333%;
-}
-
-.c0 .col-lg-offset-5 {
-  margin-left: 41.66666667%;
-}
-
-.c0 .col-lg-offset-6 {
-  margin-left: 50%;
-}
-
-.c0 .col-lg-offset-7 {
-  margin-left: 58.33333333%;
-}
-
-.c0 .col-lg-offset-8 {
-  margin-left: 66.66666667%;
-}
-
-.c0 .col-lg-offset-9 {
-  margin-left: 75%;
-}
-
-.c0 .col-lg-offset-10 {
-  margin-left: 83.33333333%;
-}
-
-.c0 .col-lg-offset-11 {
-  margin-left: 91.66666667%;
-}
-
-.c0 .position-start {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.c0 .position-center {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c0 .position-end {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: end;
-}
-
-.c0 .text-align-left {
-  text-align: left;
-}
-
-.c0 .text-align-center {
-  text-align: center;
-}
-
-.c0 .text-align-right {
-  text-align: right;
-}
-
-.c0 .top {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c0 .middle {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0 .bottom {
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c0 .around {
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-}
-
-.c0 .evenly {
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c0 .between {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c3 {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  -webkit-letter-spacing: 0.15em;
-  -moz-letter-spacing: 0.15em;
-  -ms-letter-spacing: 0.15em;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #59636e;
-  font-weight: 500;
-}
-
-.c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
-  border: 1px solid #D9DCDE;
-}
-
-.c2 {
-  padding: 12px 0 14px 13px;
-  border-bottom: 1px solid #D9DCDE;
-  border-right: 1px solid #D9DCDE;
-}
-
-.c4 {
-  cursor: pointer;
-  height: 96px;
-  border-bottom: 1px solid #D9DCDE;
-  border-right: 1px solid #D9DCDE;
-  background: inherit;
-}
-
-.c4:hover {
-  background-color: #FBF7FE;
-}
-
-@media (max-width:1024px) {
-  .c0 .col-md-0,
-  .c0 .col-md-1,
-  .c0 .col-md-2,
-  .c0 .col-md-3,
-  .c0 .col-md-4,
-  .c0 .col-md-5,
-  .c0 .col-md-6,
-  .c0 .col-md-7,
-  .c0 .col-md-8,
-  .c0 .col-md-9,
-  .c0 .col-md-10,
-  .c0 .col-md-11,
-  .c0 .col-md-12,
-  .c0 .col-md-offset-0,
-  .c0 .col-md-offset-1,
-  .c0 .col-md-offset-2,
-  .c0 .col-md-offset-3,
-  .c0 .col-md-offset-4,
-  .c0 .col-md-offset-5,
-  .c0 .col-md-offset-6,
-  .c0 .col-md-offset-7,
-  .c0 .col-md-offset-8,
-  .c0 .col-md-offset-9,
-  .c0 .col-md-offset-10,
-  .c0 .col-md-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c0 .col-md-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c0 .col-md-hide {
-    display: none;
-  }
-
-  .c0 .col-md-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c0 .col-md-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c0 .col-md-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c0 .col-md-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c0 .col-md-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c0 .col-md-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c0 .col-md-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c0 .col-md-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c0 .col-md-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c0 .col-md-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c0 .col-md-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c0 .col-md-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c0 .col-md-offset-0 {
-    margin-left: 0;
-  }
-
-  .c0 .col-md-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c0 .col-md-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c0 .col-md-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c0 .col-md-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c0 .col-md-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c0 .col-md-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c0 .col-md-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c0 .col-md-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c0 .col-md-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c0 .col-md-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c0 .col-md-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c0 .position-md-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c0 .position-md-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c0 .position-md-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c0 .text-align-md-left {
-    text-align: left;
-  }
-
-  .c0 .text-align-md-center {
-    text-align: center;
-  }
-
-  .c0 .text-align-md-right {
-    text-align: right;
-  }
-}
-
-@media (max-width:768px) {
-  .c0 .col-sm-0,
-  .c0 .col-sm-1,
-  .c0 .col-sm-2,
-  .c0 .col-sm-3,
-  .c0 .col-sm-4,
-  .c0 .col-sm-5,
-  .c0 .col-sm-6,
-  .c0 .col-sm-7,
-  .c0 .col-sm-8,
-  .c0 .col-sm-9,
-  .c0 .col-sm-10,
-  .c0 .col-sm-11,
-  .c0 .col-sm-12,
-  .c0 .col-sm-offset-0,
-  .c0 .col-sm-offset-1,
-  .c0 .col-sm-offset-2,
-  .c0 .col-sm-offset-3,
-  .c0 .col-sm-offset-4,
-  .c0 .col-sm-offset-5,
-  .c0 .col-sm-offset-6,
-  .c0 .col-sm-offset-7,
-  .c0 .col-sm-offset-8,
-  .c0 .col-sm-offset-9,
-  .c0 .col-sm-offset-10,
-  .c0 .col-sm-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c0 .col-sm-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c0 .col-sm-hide {
-    display: none;
-  }
-
-  .c0 .col-sm-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c0 .col-sm-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c0 .col-sm-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c0 .col-sm-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c0 .col-sm-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c0 .col-sm-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c0 .col-sm-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c0 .col-sm-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c0 .col-sm-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c0 .col-sm-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c0 .col-sm-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c0 .col-sm-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c0 .col-sm-offset-0 {
-    margin-left: 0;
-  }
-
-  .c0 .col-sm-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c0 .col-sm-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c0 .col-sm-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c0 .col-sm-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c0 .col-sm-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c0 .col-sm-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c0 .col-sm-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c0 .col-sm-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c0 .col-sm-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c0 .col-sm-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c0 .col-sm-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c0 .position-sm-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c0 .position-sm-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c0 .position-sm-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c0 .text-align-sm-left {
-    text-align: left;
-  }
-
-  .c0 .text-align-sm-center {
-    text-align: center;
-  }
-
-  .c0 .text-align-sm-right {
-    text-align: right;
-  }
-}
-
-@media (max-width:480px) {
-  .c0 .col-xs-0,
-  .c0 .col-xs-1,
-  .c0 .col-xs-2,
-  .c0 .col-xs-3,
-  .c0 .col-xs-4,
-  .c0 .col-xs-5,
-  .c0 .col-xs-6,
-  .c0 .col-xs-7,
-  .c0 .col-xs-8,
-  .c0 .col-xs-9,
-  .c0 .col-xs-10,
-  .c0 .col-xs-11,
-  .c0 .col-xs-12,
-  .c0 .col-xs-offset-0,
-  .c0 .col-xs-offset-1,
-  .c0 .col-xs-offset-2,
-  .c0 .col-xs-offset-3,
-  .c0 .col-xs-offset-4,
-  .c0 .col-xs-offset-5,
-  .c0 .col-xs-offset-6,
-  .c0 .col-xs-offset-7,
-  .c0 .col-xs-offset-8,
-  .c0 .col-xs-offset-9,
-  .c0 .col-xs-offset-10,
-  .c0 .col-xs-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c0 .col-xs-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c0 .col-xs-hide {
-    display: none;
-  }
-
-  .c0 .col-xs-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c0 .col-xs-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c0 .col-xs-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c0 .col-xs-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c0 .col-xs-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c0 .col-xs-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c0 .col-xs-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c0 .col-xs-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c0 .col-xs-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c0 .col-xs-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c0 .col-xs-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c0 .col-xs-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c0 .col-xs-offset-0 {
-    margin-left: 0;
-  }
-
-  .c0 .col-xs-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c0 .col-xs-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c0 .col-xs-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c0 .col-xs-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c0 .col-xs-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c0 .col-xs-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c0 .col-xs-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c0 .col-xs-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c0 .col-xs-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c0 .col-xs-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c0 .col-xs-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c0 .position-xs-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c0 .position-xs-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c0 .position-xs-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c0 .text-align-xs-left {
-    text-align: left;
-  }
-
-  .c0 .text-align-xs-center {
-    text-align: center;
-  }
-
-  .c0 .text-align-xs-right {
-    text-align: right;
-  }
-}
-
-<div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="inherited-height  c0"
-      style={Object {}}
-    >
-      <div
-        className="row default-width position-start text-align-left top normal "
-      >
-        <div
-          className="col-lg-12 col-lg-offset-0 "
-          style={Object {}}
-        >
-          <div
-            className="c1"
-          >
-            <div
-              className="inherited-height  c0"
-              style={Object {}}
-            >
-              <div
-                className="row default-width position-start text-align-left top normal "
-              >
-                <div
-                  className="col-lg-4 col-lg-offset-0 "
-                  style={Object {}}
-                >
-                  <div
-                    className="c2"
-                  >
-                    <div
-                      className="c3"
-                      style={Object {}}
-                    >
-                      Feedback Received
-                    </div>
-                  </div>
-                  <div
-                    className="c4"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="inherited-height  c0"
-                      style={Object {}}
-                    >
-                      <div
-                        className="row default-width position-start text-align-left middle normal "
-                      >
-                        <div
-                          className="col-lg-3 col-lg-offset-1 "
-                          style={Object {}}
-                        >
-                          <div
-                            aria-label="Chris Johnson"
-                            className=" UserAvatar UserAvatar--dark"
-                          >
-                            <div
-                              className="UserAvatar--inner"
-                              style={
-                                Object {
-                                  "backgroundColor": "#189F59",
-                                  "borderRadius": "100%",
-                                  "height": "58px",
-                                  "lineHeight": "58px",
-                                  "maxHeight": "58px",
-                                  "maxWidth": "58px",
-                                  "textAlign": "center",
-                                  "width": "58px",
-                                }
-                              }
-                            >
-                              CJ
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="col-lg-8 col-lg-offset-0 "
-                          style={Object {}}
-                        >
-                          Chris Johnson
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="c4"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="inherited-height  c0"
-                      style={Object {}}
-                    >
-                      <div
-                        className="row default-width position-start text-align-left middle normal "
-                      >
-                        <div
-                          className="col-lg-3 col-lg-offset-1 "
-                          style={Object {}}
-                        >
-                          <div
-                            aria-label="Nico Perez"
-                            className=" UserAvatar UserAvatar--dark"
-                          >
-                            <div
-                              className="UserAvatar--inner"
-                              style={
-                                Object {
-                                  "backgroundColor": "#189F59",
-                                  "borderRadius": "100%",
-                                  "height": "58px",
-                                  "lineHeight": "58px",
-                                  "maxHeight": "58px",
-                                  "maxWidth": "58px",
-                                  "textAlign": "center",
-                                  "width": "58px",
-                                }
-                              }
-                            >
-                              NP
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="col-lg-8 col-lg-offset-0 "
-                          style={Object {}}
-                        >
-                          Nico Perez
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    className="c4"
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="inherited-height  c0"
-                      style={Object {}}
-                    >
-                      <div
-                        className="row default-width position-start text-align-left middle normal "
-                      >
-                        <div
-                          className="col-lg-3 col-lg-offset-1 "
-                          style={Object {}}
-                        >
-                          <div
-                            aria-label="Nathaniel Moon"
-                            className=" UserAvatar UserAvatar--dark"
-                          >
-                            <div
-                              className="UserAvatar--inner"
-                              style={
-                                Object {
-                                  "backgroundColor": "#189F59",
-                                  "borderRadius": "100%",
-                                  "height": "58px",
-                                  "lineHeight": "58px",
-                                  "maxHeight": "58px",
-                                  "maxWidth": "58px",
-                                  "textAlign": "center",
-                                  "width": "58px",
-                                }
-                              }
-                            >
-                              NM
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          className="col-lg-8 col-lg-offset-0 "
-                          style={Object {}}
-                        >
-                          Nathaniel Moon
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-8 col-lg-offset-0 "
-                  style={Object {}}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>,
   <button
@@ -26289,7 +25052,7 @@ Array [
       className="c0"
       style={
         Object {
-          "color": "#AB61E5",
+          "color": "#0071f3",
         }
       }
     >
@@ -26391,7 +25154,7 @@ Array [
       className="c0"
       style={
         Object {
-          "color": "#AB61E5",
+          "color": "#0071f3",
         }
       }
     >
@@ -26493,1394 +25256,12 @@ Array [
       className="c0"
       style={
         Object {
-          "color": "#AB61E5",
+          "color": "#0071f3",
         }
       }
     >
       Components are here to stay
     </h2>
-  </div>,
-  <button
-    className="info__show-button"
-    onClick={[Function]}
-    style={
-      Object {
-        "background": "#027ac5",
-        "border": "none",
-        "borderRadius": "0 0 0 5px",
-        "color": "#fff",
-        "cursor": "pointer",
-        "display": "block",
-        "fontFamily": "sans-serif",
-        "fontSize": "12px",
-        "padding": "5px 15px",
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-    type="button"
-  >
-    Show Info
-  </button>,
-]
-`;
-
-exports[`Storyshots Multistep basic 1`] = `
-Array [
-  .c6 .component-child {
-  font-family: "Untitled Sans",sans-serif;
-  font-size: 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  cursor: pointer;
-  border-radius: 4px;
-  padding-top: 2px;
-  width: 150px;
-  height: 48px;
-  font-weight: 400;
-  line-height: 1.9rem;
-}
-
-.c6 button:disabled,
-.c6 button:disabled .component-child {
-  cursor: not-allowed !important;
-}
-
-.c6 button {
-  padding: 0;
-  border-radius: 4px;
-  display: block;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.c6 .primary {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 0;
-}
-
-.c6 .primary i {
-  font-size: 1.5em;
-}
-
-.c6 .primary:hover {
-  background-color: #4F0589;
-}
-
-.c6 .primary:active {
-  background-color: #4F0589;
-}
-
-.c6 .primary:disabled {
-  background-color: #D9DCDE;
-}
-
-.c6 .secondary {
-  color: #031323;
-  background-color: #FFFFFF;
-  border: 1px solid #D9DCDE;
-}
-
-.c6 .secondary i {
-  font-size: 1.4em;
-}
-
-.c6 .secondary:hover,
-.c6 .secondary:active {
-  color: #FFFFFF;
-  background-color: #AB61E5;
-  border: 1px solid #AB61E5;
-}
-
-.c6 .secondary:disabled {
-  color: #FFFFFF;
-  background-color: #ACB1B6;
-  border: 1px solid #ACB1B6;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c1.inherited-height {
-  height: 100%;
-}
-
-.c1 .row {
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.c1 .row.reverse {
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c1 .row.column {
-  display: block;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c1 .default-width {
-  width: 100%;
-  -webkit-flex-basis: 960px;
-  -ms-flex-preferred-size: 960px;
-  flex-basis: 960px;
-}
-
-.c1 .full-width {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-}
-
-.c1 .col,
-.c1 .col-lg-0,
-.c1 .col-lg-1,
-.c1 .col-lg-2,
-.c1 .col-lg-3,
-.c1 .col-lg-4,
-.c1 .col-lg-5,
-.c1 .col-lg-6,
-.c1 .col-lg-7,
-.c1 .col-lg-8,
-.c1 .col-lg-9,
-.c1 .col-lg-10,
-.c1 .col-lg-11,
-.c1 .col-lg-12,
-.c1 .col-lg-offset-0,
-.c1 .col-lg-offset-1,
-.c1 .col-lg-offset-2,
-.c1 .col-lg-offset-3,
-.c1 .col-lg-offset-4,
-.c1 .col-lg-offset-5,
-.c1 .col-lg-offset-6,
-.c1 .col-lg-offset-7,
-.c1 .col-lg-offset-8,
-.c1 .col-lg-offset-9,
-.c1 .col-lg-offset-10,
-.c1 .col-lg-offset-11 {
-  display: block;
-  box-sizing: border-box;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.c1 .col {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  max-width: 100%;
-}
-
-.c1 .col-lg-hide {
-  display: none;
-}
-
-.c1 .col-lg-0 {
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-}
-
-.c1 .col-lg-1 {
-  -webkit-flex-basis: 8.33333333%;
-  -ms-flex-preferred-size: 8.33333333%;
-  flex-basis: 8.33333333%;
-  max-width: 8.33333333%;
-}
-
-.c1 .col-lg-2 {
-  -webkit-flex-basis: 16.66666667%;
-  -ms-flex-preferred-size: 16.66666667%;
-  flex-basis: 16.66666667%;
-  max-width: 16.66666667%;
-}
-
-.c1 .col-lg-3 {
-  -webkit-flex-basis: 25%;
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  max-width: 25%;
-}
-
-.c1 .col-lg-4 {
-  -webkit-flex-basis: 33.33333333%;
-  -ms-flex-preferred-size: 33.33333333%;
-  flex-basis: 33.33333333%;
-  max-width: 33.33333333%;
-}
-
-.c1 .col-lg-5 {
-  -webkit-flex-basis: 41.66666667%;
-  -ms-flex-preferred-size: 41.66666667%;
-  flex-basis: 41.66666667%;
-  max-width: 41.66666667%;
-}
-
-.c1 .col-lg-6 {
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  max-width: 50%;
-}
-
-.c1 .col-lg-7 {
-  -webkit-flex-basis: 58.33333333%;
-  -ms-flex-preferred-size: 58.33333333%;
-  flex-basis: 58.33333333%;
-  max-width: 58.33333333%;
-}
-
-.c1 .col-lg-8 {
-  -webkit-flex-basis: 66.66666667%;
-  -ms-flex-preferred-size: 66.66666667%;
-  flex-basis: 66.66666667%;
-  max-width: 66.66666667%;
-}
-
-.c1 .col-lg-9 {
-  -webkit-flex-basis: 75%;
-  -ms-flex-preferred-size: 75%;
-  flex-basis: 75%;
-  max-width: 75%;
-}
-
-.c1 .col-lg-10 {
-  -webkit-flex-basis: 83.33333333%;
-  -ms-flex-preferred-size: 83.33333333%;
-  flex-basis: 83.33333333%;
-  max-width: 83.33333333%;
-}
-
-.c1 .col-lg-11 {
-  -webkit-flex-basis: 91.66666667%;
-  -ms-flex-preferred-size: 91.66666667%;
-  flex-basis: 91.66666667%;
-  max-width: 91.66666667%;
-}
-
-.c1 .col-lg-12 {
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  max-width: 100%;
-}
-
-.c1 .col-lg-offset-0 {
-  margin-left: 0;
-}
-
-.c1 .col-lg-offset-1 {
-  margin-left: 8.33333333%;
-}
-
-.c1 .col-lg-offset-2 {
-  margin-left: 16.66666667%;
-}
-
-.c1 .col-lg-offset-3 {
-  margin-left: 25%;
-}
-
-.c1 .col-lg-offset-4 {
-  margin-left: 33.33333333%;
-}
-
-.c1 .col-lg-offset-5 {
-  margin-left: 41.66666667%;
-}
-
-.c1 .col-lg-offset-6 {
-  margin-left: 50%;
-}
-
-.c1 .col-lg-offset-7 {
-  margin-left: 58.33333333%;
-}
-
-.c1 .col-lg-offset-8 {
-  margin-left: 66.66666667%;
-}
-
-.c1 .col-lg-offset-9 {
-  margin-left: 75%;
-}
-
-.c1 .col-lg-offset-10 {
-  margin-left: 83.33333333%;
-}
-
-.c1 .col-lg-offset-11 {
-  margin-left: 91.66666667%;
-}
-
-.c1 .position-start {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-
-.c1 .position-center {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c1 .position-end {
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  text-align: end;
-}
-
-.c1 .text-align-left {
-  text-align: left;
-}
-
-.c1 .text-align-center {
-  text-align: center;
-}
-
-.c1 .text-align-right {
-  text-align: right;
-}
-
-.c1 .top {
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c1 .middle {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 .bottom {
-  -webkit-align-items: flex-end;
-  -webkit-box-align: flex-end;
-  -ms-flex-align: flex-end;
-  align-items: flex-end;
-}
-
-.c1 .around {
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-}
-
-.c1 .evenly {
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-}
-
-.c1 .between {
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.c2 {
-  font-weight: 500;
-  font-size: 3.1rem;
-  line-height: 3.6rem;
-}
-
-.c3 {
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  -webkit-letter-spacing: 0.15em;
-  -moz-letter-spacing: 0.15em;
-  -ms-letter-spacing: 0.15em;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: #59636e;
-  font-weight: 500;
-}
-
-.c4 {
-  padding: 25px 20px 10px 20px;
-  border: 1px solid #D9DCDE;
-  box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
-}
-
-.c0 {
-  margin-bottom: 33px;
-  margin-top: 23px;
-}
-
-.c5 {
-  cursor: pointer;
-  margin: 10px 0;
-  display: block;
-  padding: 19px 78px 20px 31px;
-  background: #F2F3F4;
-  color: inherit;
-}
-
-.c5:first-child {
-  margin-top: 0px;
-}
-
-.c5:last-child {
-  margin-bottom: 36px;
-}
-
-.c5:hover {
-  background-color: #59636e;
-  color: #FFFFFF;
-}
-
-.c5 input {
-  opacity: 0;
-  position: absolute;
-}
-
-@media (max-width:1024px) {
-  .c1 .col-md-0,
-  .c1 .col-md-1,
-  .c1 .col-md-2,
-  .c1 .col-md-3,
-  .c1 .col-md-4,
-  .c1 .col-md-5,
-  .c1 .col-md-6,
-  .c1 .col-md-7,
-  .c1 .col-md-8,
-  .c1 .col-md-9,
-  .c1 .col-md-10,
-  .c1 .col-md-11,
-  .c1 .col-md-12,
-  .c1 .col-md-offset-0,
-  .c1 .col-md-offset-1,
-  .c1 .col-md-offset-2,
-  .c1 .col-md-offset-3,
-  .c1 .col-md-offset-4,
-  .c1 .col-md-offset-5,
-  .c1 .col-md-offset-6,
-  .c1 .col-md-offset-7,
-  .c1 .col-md-offset-8,
-  .c1 .col-md-offset-9,
-  .c1 .col-md-offset-10,
-  .c1 .col-md-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c1 .col-md-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c1 .col-md-hide {
-    display: none;
-  }
-
-  .c1 .col-md-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c1 .col-md-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c1 .col-md-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c1 .col-md-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c1 .col-md-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c1 .col-md-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c1 .col-md-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c1 .col-md-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c1 .col-md-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c1 .col-md-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c1 .col-md-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c1 .col-md-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c1 .col-md-offset-0 {
-    margin-left: 0;
-  }
-
-  .c1 .col-md-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c1 .col-md-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c1 .col-md-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c1 .col-md-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c1 .col-md-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c1 .col-md-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c1 .col-md-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c1 .col-md-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c1 .col-md-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c1 .col-md-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c1 .col-md-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c1 .position-md-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c1 .position-md-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c1 .position-md-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c1 .text-align-md-left {
-    text-align: left;
-  }
-
-  .c1 .text-align-md-center {
-    text-align: center;
-  }
-
-  .c1 .text-align-md-right {
-    text-align: right;
-  }
-}
-
-@media (max-width:768px) {
-  .c1 .col-sm-0,
-  .c1 .col-sm-1,
-  .c1 .col-sm-2,
-  .c1 .col-sm-3,
-  .c1 .col-sm-4,
-  .c1 .col-sm-5,
-  .c1 .col-sm-6,
-  .c1 .col-sm-7,
-  .c1 .col-sm-8,
-  .c1 .col-sm-9,
-  .c1 .col-sm-10,
-  .c1 .col-sm-11,
-  .c1 .col-sm-12,
-  .c1 .col-sm-offset-0,
-  .c1 .col-sm-offset-1,
-  .c1 .col-sm-offset-2,
-  .c1 .col-sm-offset-3,
-  .c1 .col-sm-offset-4,
-  .c1 .col-sm-offset-5,
-  .c1 .col-sm-offset-6,
-  .c1 .col-sm-offset-7,
-  .c1 .col-sm-offset-8,
-  .c1 .col-sm-offset-9,
-  .c1 .col-sm-offset-10,
-  .c1 .col-sm-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c1 .col-sm-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c1 .col-sm-hide {
-    display: none;
-  }
-
-  .c1 .col-sm-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c1 .col-sm-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c1 .col-sm-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c1 .col-sm-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c1 .col-sm-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c1 .col-sm-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c1 .col-sm-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c1 .col-sm-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c1 .col-sm-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c1 .col-sm-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c1 .col-sm-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c1 .col-sm-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c1 .col-sm-offset-0 {
-    margin-left: 0;
-  }
-
-  .c1 .col-sm-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c1 .col-sm-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c1 .col-sm-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c1 .col-sm-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c1 .col-sm-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c1 .col-sm-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c1 .col-sm-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c1 .col-sm-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c1 .col-sm-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c1 .col-sm-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c1 .col-sm-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c1 .position-sm-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c1 .position-sm-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c1 .position-sm-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c1 .text-align-sm-left {
-    text-align: left;
-  }
-
-  .c1 .text-align-sm-center {
-    text-align: center;
-  }
-
-  .c1 .text-align-sm-right {
-    text-align: right;
-  }
-}
-
-@media (max-width:480px) {
-  .c1 .col-xs-0,
-  .c1 .col-xs-1,
-  .c1 .col-xs-2,
-  .c1 .col-xs-3,
-  .c1 .col-xs-4,
-  .c1 .col-xs-5,
-  .c1 .col-xs-6,
-  .c1 .col-xs-7,
-  .c1 .col-xs-8,
-  .c1 .col-xs-9,
-  .c1 .col-xs-10,
-  .c1 .col-xs-11,
-  .c1 .col-xs-12,
-  .c1 .col-xs-offset-0,
-  .c1 .col-xs-offset-1,
-  .c1 .col-xs-offset-2,
-  .c1 .col-xs-offset-3,
-  .c1 .col-xs-offset-4,
-  .c1 .col-xs-offset-5,
-  .c1 .col-xs-offset-6,
-  .c1 .col-xs-offset-7,
-  .c1 .col-xs-offset-8,
-  .c1 .col-xs-offset-9,
-  .c1 .col-xs-offset-10,
-  .c1 .col-xs-offset-11 {
-    display: block;
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-  }
-
-  .c1 .col-xs-0 {
-    -webkit-flex-basis: 0;
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-  }
-
-  .c1 .col-xs-hide {
-    display: none;
-  }
-
-  .c1 .col-xs-1 {
-    -webkit-flex-basis: 8.33333333%;
-    -ms-flex-preferred-size: 8.33333333%;
-    flex-basis: 8.33333333%;
-    max-width: 8.33333333%;
-  }
-
-  .c1 .col-xs-2 {
-    -webkit-flex-basis: 16.66666667%;
-    -ms-flex-preferred-size: 16.66666667%;
-    flex-basis: 16.66666667%;
-    max-width: 16.66666667%;
-  }
-
-  .c1 .col-xs-3 {
-    -webkit-flex-basis: 25%;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
-  }
-
-  .c1 .col-xs-4 {
-    -webkit-flex-basis: 33.33333333%;
-    -ms-flex-preferred-size: 33.33333333%;
-    flex-basis: 33.33333333%;
-    max-width: 33.33333333%;
-  }
-
-  .c1 .col-xs-5 {
-    -webkit-flex-basis: 41.66666667%;
-    -ms-flex-preferred-size: 41.66666667%;
-    flex-basis: 41.66666667%;
-    max-width: 41.66666667%;
-  }
-
-  .c1 .col-xs-6 {
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    max-width: 50%;
-  }
-
-  .c1 .col-xs-7 {
-    -webkit-flex-basis: 58.33333333%;
-    -ms-flex-preferred-size: 58.33333333%;
-    flex-basis: 58.33333333%;
-    max-width: 58.33333333%;
-  }
-
-  .c1 .col-xs-8 {
-    -webkit-flex-basis: 66.66666667%;
-    -ms-flex-preferred-size: 66.66666667%;
-    flex-basis: 66.66666667%;
-    max-width: 66.66666667%;
-  }
-
-  .c1 .col-xs-9 {
-    -webkit-flex-basis: 75%;
-    -ms-flex-preferred-size: 75%;
-    flex-basis: 75%;
-    max-width: 75%;
-  }
-
-  .c1 .col-xs-10 {
-    -webkit-flex-basis: 83.33333333%;
-    -ms-flex-preferred-size: 83.33333333%;
-    flex-basis: 83.33333333%;
-    max-width: 83.33333333%;
-  }
-
-  .c1 .col-xs-11 {
-    -webkit-flex-basis: 91.66666667%;
-    -ms-flex-preferred-size: 91.66666667%;
-    flex-basis: 91.66666667%;
-    max-width: 91.66666667%;
-  }
-
-  .c1 .col-xs-12 {
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-
-  .c1 .col-xs-offset-0 {
-    margin-left: 0;
-  }
-
-  .c1 .col-xs-offset-1 {
-    margin-left: 8.33333333%;
-  }
-
-  .c1 .col-xs-offset-2 {
-    margin-left: 16.66666667%;
-  }
-
-  .c1 .col-xs-offset-3 {
-    margin-left: 25%;
-  }
-
-  .c1 .col-xs-offset-4 {
-    margin-left: 33.33333333%;
-  }
-
-  .c1 .col-xs-offset-5 {
-    margin-left: 41.66666667%;
-  }
-
-  .c1 .col-xs-offset-6 {
-    margin-left: 50%;
-  }
-
-  .c1 .col-xs-offset-7 {
-    margin-left: 58.33333333%;
-  }
-
-  .c1 .col-xs-offset-8 {
-    margin-left: 66.66666667%;
-  }
-
-  .c1 .col-xs-offset-9 {
-    margin-left: 75%;
-  }
-
-  .c1 .col-xs-offset-10 {
-    margin-left: 83.33333333%;
-  }
-
-  .c1 .col-xs-offset-11 {
-    margin-left: 91.66666667%;
-  }
-
-  .c1 .position-xs-start {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .c1 .position-xs-center {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .c1 .position-xs-end {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    text-align: end;
-  }
-
-  .c1 .text-align-xs-left {
-    text-align: left;
-  }
-
-  .c1 .text-align-xs-center {
-    text-align: center;
-  }
-
-  .c1 .text-align-xs-right {
-    text-align: right;
-  }
-}
-
-<div
-    style={
-      Object {
-        "position": "relative",
-        "zIndex": 0,
-      }
-    }
-  >
-    <div
-      className="c0"
-    >
-      <div
-        className="inherited-height  c1"
-        style={Object {}}
-      >
-        <div
-          className="row default-width position-start text-align-left top normal "
-        >
-          <div
-            className="col-lg-10 col-lg-offset-0 "
-            style={Object {}}
-          >
-            <h2
-              className="c2"
-              style={
-                Object {
-                  "marginBottom": 12,
-                  "marginTop": 0,
-                }
-              }
-            >
-              How helpful was X?
-            </h2>
-            <div
-              className="c3"
-              style={Object {}}
-            >
-              share your feedback for 
-              Peter peterson
-            </div>
-          </div>
-          <div
-            className="col-lg-2 col-lg-offset-0 "
-            style={Object {}}
-          >
-            <div
-              aria-label="Peter peterson"
-              className=" UserAvatar UserAvatar--dark"
-              style={
-                Object {
-                  "float": "right ",
-                }
-              }
-            >
-              <div
-                className="UserAvatar--inner"
-                style={
-                  Object {
-                    "backgroundColor": "#e67e22",
-                    "borderRadius": "100%",
-                    "height": "58px",
-                    "lineHeight": "58px",
-                    "maxHeight": "58px",
-                    "maxWidth": "58px",
-                    "textAlign": "center",
-                    "width": "58px",
-                  }
-                }
-              >
-                Pp
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="inherited-height  c1"
-      style={Object {}}
-    >
-      <div
-        className="row default-width position-start text-align-left top normal "
-      >
-        <div
-          className="col-lg-12 col-lg-offset-0 "
-          style={Object {}}
-        >
-          <div
-            className="c4"
-          >
-            <form>
-              <label
-                checked={false}
-                className="c5"
-                style={Object {}}
-              >
-                <input
-                  checked={false}
-                  name="radio"
-                  onChange={[Function]}
-                  placeholder=""
-                  type="radio"
-                  value={0}
-                />
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              </label>
-              <label
-                checked={false}
-                className="c5"
-                style={Object {}}
-              >
-                <input
-                  checked={false}
-                  name="radio"
-                  onChange={[Function]}
-                  placeholder=""
-                  type="radio"
-                  value={1}
-                />
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              </label>
-              <label
-                checked={false}
-                className="c5"
-                style={Object {}}
-              >
-                <input
-                  checked={false}
-                  name="radio"
-                  onChange={[Function]}
-                  placeholder=""
-                  type="radio"
-                  value={2}
-                />
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-              </label>
-              <div
-                style={
-                  Object {
-                    "marginTop": 28,
-                  }
-                }
-              >
-                <div
-                  className="inherited-height  c1"
-                  style={Object {}}
-                >
-                  <div
-                    className="row default-width position-start text-align-center top normal "
-                  >
-                    <div
-                      className="col-lg-4 col-lg-offset-0 "
-                      style={Object {}}
-                    >
-                      <div
-                        className="c6"
-                      >
-                        <button
-                          className=" secondary"
-                          disabled={true}
-                          id={null}
-                          onClick={[Function]}
-                          style={Object {}}
-                          type="button"
-                        >
-                          <div
-                            className="component-child"
-                          >
-                            Previous
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-4 col-lg-offset-0 "
-                      style={Object {}}
-                    >
-                      <div
-                        style={
-                          Object {
-                            "display": "flex",
-                            "justifyContent": "center",
-                          }
-                        }
-                      >
-                        <div
-                          className="c6"
-                        >
-                          <button
-                            className=" secondary"
-                            disabled={false}
-                            id={null}
-                            onClick={[Function]}
-                            style={Object {}}
-                            type="button"
-                          >
-                            <div
-                              className="component-child"
-                            >
-                              Skip
-                            </div>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="col-lg-4 col-lg-offset-0 "
-                      style={Object {}}
-                    >
-                      <div
-                        className="c6"
-                      >
-                        <button
-                          className=" secondary"
-                          disabled={false}
-                          id={null}
-                          onClick={[Function]}
-                          style={
-                            Object {
-                              "float": "right ",
-                            }
-                          }
-                          type="button"
-                        >
-                          <div
-                            className="component-child"
-                          >
-                            Next
-                          </div>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <div
-              className="c3"
-              style={
-                Object {
-                  "color": "#031323",
-                  "paddingTop": 16,
-                }
-              }
-            >
-              Questions Completed
-            </div>
-            <div
-              style={
-                Object {
-                  "fontSize": "1.6rem",
-                  "paddingBottom": 13,
-                  "paddingTop": 8,
-                }
-              }
-            >
-              1
-              /
-              4
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>,
   <button
     className="info__show-button"
@@ -28935,7 +26316,7 @@ Array [
                 onClick={[Function]}
                 style={
                   Object {
-                    "backgroundColor": "#AB61E5",
+                    "backgroundColor": "#0071f3",
                   }
                 }
                 type="button"
@@ -28944,7 +26325,7 @@ Array [
                   className="copy"
                 >
                   copy 
-                  #AB61E5
+                  #0071f3
                 </span>
               </button>
               <div
@@ -28955,7 +26336,7 @@ Array [
               <div
                 className="color-name"
               >
-                #AB61E5
+                #0071f3
               </div>
             </div>
           </div>
@@ -29003,7 +26384,7 @@ Array [
                 onClick={[Function]}
                 style={
                   Object {
-                    "backgroundColor": "#4F0589",
+                    "backgroundColor": "#0366d6",
                   }
                 }
                 type="button"
@@ -29012,7 +26393,7 @@ Array [
                   className="copy"
                 >
                   copy 
-                  #4F0589
+                  #0366d6
                 </span>
               </button>
               <div
@@ -29023,7 +26404,41 @@ Array [
               <div
                 className="color-name"
               >
-                #4F0589
+                #0366d6
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-lg-0 col-lg-offset-0 "
+            style={Object {}}
+          >
+            <div>
+              <button
+                className="color-box"
+                onClick={[Function]}
+                style={
+                  Object {
+                    "backgroundColor": "#5da2f0",
+                  }
+                }
+                type="button"
+              >
+                <span
+                  className="copy"
+                >
+                  copy 
+                  #5da2f0
+                </span>
+              </button>
+              <div
+                className="color-description"
+              >
+                activeLight
+              </div>
+              <div
+                className="color-name"
+              >
+                #5da2f0
               </div>
             </div>
           </div>
