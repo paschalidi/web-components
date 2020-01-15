@@ -16,8 +16,6 @@ Deployment for the component library is an automated process requiring three sep
 - Packaging: Deploying the npm package
 - Website: Deploying storybook static assets to Github pages
 
-All tasks are ran using [Circle CI](https://circleci.com/gh/UvitaTeam/) whenever any changes are detected (excluding the master branch). Both the packaging and website steps are only triggered when a new tag is added to the project. To handle releases we use Github's release interface which will automatically run the steps necessary to make new changes available.
-
 ## Tech Used
 
 - Storybook
