@@ -1,11 +1,11 @@
-name: publish storybook
+name: storybook workflow 
 
 on:
   release:
     types: [created]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -13,7 +13,18 @@ jobs:
         with:
           node-version: 12
       - run: yarn
+      - run: npm run linter:check
       - run: yarn test
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn
+      - run: yarn deploy:storybook
 
   publish-npm:
     needs: build
