@@ -1,0 +1,10 @@
+{
+  "extends": "vivy",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": 0,
+    "class-methods-use-this": 1
+  }
+}
