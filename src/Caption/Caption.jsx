@@ -12,12 +12,8 @@ const CaptionStyles = styled.div`
   font-weight: 500;
 `;
 
-export default function Caption({ children, style, type }) {
-  return (
-    <CaptionStyles style={style} type={type}>
-      {children}
-    </CaptionStyles>
-  );
+export default function Caption({ children, style }) {
+  return <CaptionStyles style={style}>{children}</CaptionStyles>;
 }
 
 Caption.propTypes = {
