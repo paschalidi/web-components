@@ -40,6 +40,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: yarn
+      - run: echo ${REF#refs/tags/}
       - run: npm version ${REF#refs/tags/}
       - run: npm run build:package
       - run: npm publish --access public
