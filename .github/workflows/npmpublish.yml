@@ -41,6 +41,9 @@ jobs:
 
       - run: yarn
       - run: npm run build:package
+      - run: |
+        ref='${{github.ref}}'
+        npm version ${ref#refs/tags/}
       - run: npm publish --tag latest --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
