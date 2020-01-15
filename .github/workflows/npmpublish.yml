@@ -41,8 +41,7 @@ jobs:
 
       - run: yarn
       - run: echo ${REF#refs/tags/}
-      - run: npm version ${REF#refs/tags/} && git push origin HEAD:master
-      - run: npm run build:package
-      - run: npm publish --access public
+      - run: yarn build:package
+      - run: yarn publish --new-version ${REF#"refs/tags/"} --no-git-tag-version --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
