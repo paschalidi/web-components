@@ -1,7 +1,7 @@
 {
   "name": "@the-simple/web-components",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "files": [
     "/dist",
