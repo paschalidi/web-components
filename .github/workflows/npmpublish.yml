@@ -38,7 +38,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - run: yarn
-      - run: npm version $GITHUB_REF && git push origin HEAD:master
+      - run: npm version ${GITHUB_REF#refs/tags/} && git push origin HEAD:master
       - run: npm run build:package
       - run: npm publish --access public
         env:
