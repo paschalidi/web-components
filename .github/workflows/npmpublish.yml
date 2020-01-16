@@ -30,7 +30,7 @@ jobs:
   publish-npm:
 #    needs: test
     env:
-      REF: ${{github.ref}}
+      GITHUB_REF: ${{github.ref}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -39,11 +39,13 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
 
-      - run: yarn
-      - run: echo ${REF#refs/tags/}
-      - run: yarn build:package
-      - run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-      - run: npm publish --access public --new-version ${REF#"refs/tags/"} --no-git-tag-version
-
+    - name: Install dependencies
+      run: yarn
+    - name: Build
+      run: yarn build:package
+    - name: Create .npmrc
+      run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+    - name: Publish
+      run: yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
