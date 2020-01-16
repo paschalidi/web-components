@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 12
       - run: yarn
-      - run: npm run linter:check
+      - run: yarn linter:check
       - run: yarn test
 
   publish-npm:
@@ -26,5 +26,5 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-      - run: npm run deploy:storybook
+      - run: yarn deploy:storybook
       - run: yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
