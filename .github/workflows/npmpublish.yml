@@ -16,6 +16,15 @@ jobs:
       - run: yarn linter:check
       - run: yarn test
 
+  deploy-surge:
+#    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: yarn
+      - run: yarn build:storybook
+      - run: yarn surge --project storybook-static --domain ${{github.sha}}-web-compoments.surge.sh --token ${{ secrets.surge_token }}
+
   publish-npm:
 #    needs: test
     runs-on: ubuntu-latest
@@ -26,5 +35,4 @@ jobs:
       - run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-      - run: yarn deploy:storybook
       - run: yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
