@@ -29,8 +29,6 @@ jobs:
 
   publish-npm:
 #    needs: test
-    env:
-      GITHUB_REF: ${{github.ref}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
