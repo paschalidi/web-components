@@ -32,18 +32,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-
-    - name: Install dependencies
-      run: yarn
-    - name: Build
-      run: yarn build:package
-    - name: Create .npmrc
-      run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-    - name: Publish
-      run: yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
+      - name: Install dependencies
+        run: yarn
+      - name: Build
+        run: yarn build:package
+      - name: Create .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+      - name: Publish
+        run: yarn publish --new-version ${GITHUB_REF#"refs/tags/"} --no-git-tag-version
