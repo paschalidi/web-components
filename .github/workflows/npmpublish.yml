@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: yarn
-      - run: yarn build:storybook
+      - run: yarn build:static
       - run: yarn surge --project storybook-static --domain ${{github.sha}}-web-compoments.surge.sh --token ${{ secrets.surge_token }}
       - run: echo ${{github.sha}}-web-compoments.surge.sh
 
