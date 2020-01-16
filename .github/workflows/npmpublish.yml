@@ -30,7 +30,6 @@ jobs:
   publish-npm:
 #    needs: test
     env:
-      NPM_TOKEN: ${{secrets.npm_token}}
       REF: ${{github.ref}}
     runs-on: ubuntu-latest
     steps:
@@ -43,7 +42,8 @@ jobs:
       - run: yarn
       - run: echo ${REF#refs/tags/}
       - run: yarn build:package
-      - run: echo '//registry.npmjs.org/:_authToken=$NPM_TOKEN' > ~/repo/.npmrc
-      - run: npm  publish --access public --new-version ${REF#"refs/tags/"} --no-git-tag-version
+      - run: echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" >> ~/.npmrc
         env:
-          NODE_AUTH_TOKEN: ${NPM_TOKEN}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+      - run: npm publish --access public --new-version ${REF#"refs/tags/"} --no-git-tag-version
+
