@@ -43,7 +43,7 @@ jobs:
       - run: yarn
       - run: echo ${REF#refs/tags/}
       - run: yarn build:package
-      - run: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > ~/repo/.npmrc
+#      - run: echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > ~/repo/.npmrc
       - run: npm  publish --access public --new-version ${REF#"refs/tags/"} --no-git-tag-version
         env:
           NODE_AUTH_TOKEN: ${NPM_TOKEN}
