@@ -1,7 +1,6 @@
 {
-  "name": "@okra-cms/web-components",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@the-simple/web-components",
+  "version": "0.0.0",
   "license": "MIT",
   "files": [
     "/dist",
@@ -13,12 +12,11 @@
   "scripts": {
     "linter:fix": "prettier --write '{,!(node_modules|.git|storybook-static)/**/}*.{js,json,jsx,md}'",
     "linter:check": "eslint src/**/* && eslint stories/*.jsx",
-    "start": "npm -s run build:package && start-storybook -p 3006 -s ./public",
-    "build:storybook": "storybook-to-ghpages",
+    "start": "npm -s run build:dist && start-storybook -p 3006 -s ./public",
     "build:static": "build-storybook -s public",
-    "build:package": "babel --presets @babel/react ./src --out-dir ./dist",
-    "test": "npm run build:package && jest",
-    "test:dist": "npm run build:package && node tests/dist.test.js",
+    "build:dist": "babel --presets @babel/react ./src --out-dir ./dist",
+    "test": "npm run build:dist && jest",
+    "test:dist": "npm run build:dist && node tests/dist.test.js",
     "test:watch": "npm run test -- --watchAll"
   },
   "dependencies": {
@@ -41,7 +39,6 @@
     "@storybook/addon-storyshots": "^5.2.0",
     "@storybook/addons": "^5.2.1",
     "@storybook/react": "^5.2.1",
-    "@storybook/storybook-deployer": "^2.8.1",
     "@storybook/theming": "^5.2.1",
     "babel-loader": "8.0.6",
     "babel-plugin-require-context-hook": "1.0.0",
@@ -52,7 +49,8 @@
     "jest-styled-components": "6.3.3",
     "prettier": "^1.18.2",
     "react-scripts": "^3.1.1",
-    "react-test-renderer": "16.10.2"
+    "react-test-renderer": "16.10.2",
+    "surge": "^0.21.3"
   },
   "jest": {
     "projects": [
