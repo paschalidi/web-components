@@ -2,15 +2,20 @@
 
 React components used inside of your web apps.
 
-## Component Development
+## Install 
 
-To get started developing components first read [the storybook quickstart](https://storybook.js.org/basics/quick-start-guide/).
+```
+npm i @the-simple/web-components
+```
 
-Essentially all you need is to create your component and link it together with the current stories in `stories/index.stories.js`.
+```
+yarn add @the-simple/web-components
+```
 
 ## Automated Deployment
 
-Deployment for the component library is an automated process requiring three separate tasks:
+Trigger by creating a new release version. 
+The deployment for the component library is an automated process requiring three separate tasks:
 
 - Testing: Building, linting, and unit testing code
 - Packaging: Deploying the npm package
